@@ -55,9 +55,11 @@ alias c++="g++ -Wall -Wextra -Werror *.cpp"
 
 alias ls='ls -G'
 alias ll='ls -G -lah'
+alias la='ls -G -ah'
 alias l='ll'
 alias lll='ls -G -lah | less'
 alias grep='grep --color=auto'
+alias zshrc='vim ~/.zshrc'
 
 # cd -N
 export DIRSTACKSIZE=8
@@ -66,6 +68,9 @@ setopt autopushd pushdminus pushdsilent pushdtohome
 setopt auto_cd
 cdpath=("$HOME/Projects")
 
+#coloration des commandes
+source ~/.zsh_prompt
+source ~/zsh-syntax-highlighting.zsh
 
 
 
