@@ -50,7 +50,6 @@ setopt correctall
 alias .files="defaults write com.apple.finder AppleShowAllFiles 1 && killall -KILL Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles 0 && killall -KILL Finder"
 alias auteur="echo cdannapp > auteur && cat -e auteur"
-alias zshrc="subl $HOME/.zshrc"
 alias c++="g++ -Wall -Wextra -Werror *.cpp"
 
 alias ls='ls -G'
@@ -59,7 +58,17 @@ alias la='ls -G -ah'
 alias l='ll'
 alias lll='ls -G -lah | less'
 alias grep='grep --color=auto'
+
+alias src='source ~/.zshrc'
+
 alias zshrc='vim ~/.zshrc'
+alias prompt='vim ~/.zsh_prompt'
+gitignore(){
+	echo $* >> .gitignore
+}
+st(){
+/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $*
+}
 
 # cd -N
 export DIRSTACKSIZE=8
@@ -71,6 +80,3 @@ cdpath=("$HOME/Projects")
 #coloration des commandes
 source ~/.zsh_prompt
 source ~/zsh-syntax-highlighting.zsh
-
-
-

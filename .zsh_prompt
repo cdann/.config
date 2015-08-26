@@ -24,7 +24,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$FG[040]%}✔"
          echo "%F{green} ✔%f"
      fi
  }
- PROMPT='%F{magenta}%B %*%b%F{cyan} | %F{cyan}%B%n%b%F{cyan} at %B%m%b%F{cyan} in %F{green}$(git_branch)%F{yellow}$(get_pwd)%f$(need_commit) %F{magenta}%B➤%b%f '
+ PROMPT='%F{magenta}%B %*%b%F{cyan} | %F{cyan}%B%n%b%F{cyan} at %B%m%b%F{cyan} in %F{yellow}%3c%f$(need_commit) %F{cyan}$(git_branch)%F{magenta}%B➤%b%f '
 
 function virtualenv_info {
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
