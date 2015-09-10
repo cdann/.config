@@ -69,6 +69,7 @@ gitignore(){
 st(){
 /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $*
 }
+alias init="sh ~/configs/initsubl.sh"
 
 # cd -N
 export DIRSTACKSIZE=8
