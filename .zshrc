@@ -66,6 +66,15 @@ alias prompt='vim ~/.zsh_prompt'
 gitignore(){
 	echo $* >> .gitignore
 }
+
+cd(){
+	builtin cd $*
+	if [[ -f .alias ]]; then
+		source .alias
+		cat .alias
+	fi
+}
+
 st(){
 /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $*
 }

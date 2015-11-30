@@ -3,6 +3,7 @@
 	"auto_indent": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/mycolors/feel_good.tmTheme",
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"highlight_line": true,
 	"ignored_packages":
@@ -17,6 +18,8 @@
 	[
 		80
 	],
+	"scroll_past_end": true,
 	"theme": "Material-Theme-Lighter.sublime-theme",
-	"translate_space_to_tab": true
+	"translate_space_to_tab": true,
+	"trim_trailing_white_space_on_save": true
 }
