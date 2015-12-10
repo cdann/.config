@@ -49,4 +49,6 @@
 		}
 	},
 	{ "keys": ["super+ctr+t"], "command": "open_terminal_project_folder" },
+	{ "keys": ["super+shift+x"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
 ]
