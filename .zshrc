@@ -89,4 +89,4 @@ cdpath=("$HOME/Projects")
 
 #coloration des commandes
 source ~/.zsh_prompt
-source ~/zsh-syntax-highlighting.zsh
+source ~/zsh-syntax-highlighting
