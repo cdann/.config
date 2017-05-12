@@ -67,14 +67,6 @@ gitignore(){
 	echo $* >> .gitignore
 }
 
-cd(){
-	builtin cd $*
-	if [[ -f .alias ]]; then
-		source .alias
-		cat .alias
-	fi
-}
-
 st(){
 /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $*
 }
@@ -89,4 +81,4 @@ cdpath=("$HOME/Projects")
 
 #coloration des commandes
 source ~/.zsh_prompt
-source ~/zsh-syntax-highlighting
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

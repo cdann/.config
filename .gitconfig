@@ -2,3 +2,6 @@
 	tlog = log --graph --pretty=format:'[%Cblue%h%Creset] -  %C(yellow) %s %Creset  -%C(bold black) %d %an %cr' --abbrev-commit --date=relative
 	cm = commit -m
 	amend = commit --amend -m
+[user]
+	mail = cweline.dannappe@gmail.com
+	email = celine.dannappe@gmail.com
